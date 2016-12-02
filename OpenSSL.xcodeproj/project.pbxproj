@@ -1694,7 +1694,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6428745C1DCDCC5600B98C82 /* OpenSSL_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6428745C1DCDCC5600B98C82 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		644C1AFA1DF13250009B0EA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OpenSSL.xcodeproj/Info.plist; sourceTree = "<group>"; };
 		644C1AFB1DF13250009B0EA0 /* OpenSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenSSL.h; path = OpenSSL.xcodeproj/OpenSSL.h; sourceTree = "<group>"; };
 		644C1B031DF132EB009B0EA0 /* a_bitstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = a_bitstr.c; sourceTree = "<group>"; };
@@ -2538,7 +2538,7 @@
 		644C254D1DF1331B009B0EA0 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
 		644C254E1DF1331B009B0EA0 /* wp_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wp_locl.h; sourceTree = "<group>"; };
 		644C26311DF1338F009B0EA0 /* OpenSSL.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OpenSSL.podspec; sourceTree = "<group>"; };
-		64CC1ED91DCC54DF000ADECE /* OpenSSL_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CC1ED91DCC54DF000ADECE /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3452,8 +3452,8 @@
 		64CC1EDA1DCC54DF000ADECE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64CC1ED91DCC54DF000ADECE /* OpenSSL_macOS.framework */,
-				6428745C1DCDCC5600B98C82 /* OpenSSL_iOS.framework */,
+				64CC1ED91DCC54DF000ADECE /* OpenSSL.framework */,
+				6428745C1DCDCC5600B98C82 /* OpenSSL.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3811,7 +3811,7 @@
 			);
 			name = OpenSSL_iOS;
 			productName = OpenSSL_iOS;
-			productReference = 6428745C1DCDCC5600B98C82 /* OpenSSL_iOS.framework */;
+			productReference = 6428745C1DCDCC5600B98C82 /* OpenSSL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		64CC1ED81DCC54DF000ADECE /* OpenSSL_macOS */ = {
@@ -3829,7 +3829,7 @@
 			);
 			name = OpenSSL_macOS;
 			productName = OpenSSL_macOS;
-			productReference = 64CC1ED91DCC54DF000ADECE /* OpenSSL_macOS.framework */;
+			productReference = 64CC1ED91DCC54DF000ADECE /* OpenSSL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -5327,7 +5327,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.core.OpenSSL-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OpenSSL;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -5386,7 +5386,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.core.OpenSSL-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OpenSSL;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -5465,7 +5465,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.core.OpenSSL-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OpenSSL;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -5524,7 +5524,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yq.core.OpenSSL-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = OpenSSL;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
